@@ -32,9 +32,23 @@ Public Class Fildedownloader
     End Sub
 
     Private Sub updater1_Tick(sender As Object, e As EventArgs) Handles updater1.Tick
-        If TextBoxFilename.Text.Length > 1 Then
-            ButtonDownload.Visible = True
-            ProgressBarPercentageDownload.Visible = True
+        If TextBoxUrl.Text.Length > 1 And TextBoxUrl.Text.EndsWith(".mp4") Or
+            TextBoxUrl.Text.EndsWith(".mp3") Or TextBoxUrl.Text.EndsWith(".pdf") Or
+            TextBoxUrl.Text.EndsWith(".jpg") Or TextBoxUrl.Text.EndsWith(".jpeg") Or
+            TextBoxUrl.Text.EndsWith(".png") Or TextBoxUrl.Text.EndsWith(".docx") Or TextBoxUrl.Text.EndsWith(".docs") Then
+            LabelError.Visible = False
+            If TextBoxFilename.Text.Length > 1 Then
+                ButtonDownload.Visible = True
+                ProgressBarPercentageDownload.Visible = True
+                LabelPercentage.Text.Visible = True
+            End If
+        End If
+        If ProgressBarPercentageDownload.Value = 100 Then
+            MessageBox.Show("File Downloaded!!!")
+            TextBoxUrl.Text = ""
+            ProgressBarPercentageDownload.Value = 0
+            TextBoxLocation.Text = ""
+            TextBoxFilename.Text = ""
         End If
     End Sub
 End Class

@@ -35,6 +35,7 @@ Partial Class Fildedownloader
         Me.labelFilename = New System.Windows.Forms.Label()
         Me.LabelPercentage = New System.Windows.Forms.Label()
         Me.updater1 = New System.Windows.Forms.Timer(Me.components)
+        Me.LabelError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LabelUrl
@@ -57,17 +58,21 @@ Partial Class Fildedownloader
         '
         'TextBoxUrl
         '
+        Me.TextBoxUrl.Enabled = False
         Me.TextBoxUrl.Location = New System.Drawing.Point(106, 51)
         Me.TextBoxUrl.Name = "TextBoxUrl"
         Me.TextBoxUrl.Size = New System.Drawing.Size(290, 23)
         Me.TextBoxUrl.TabIndex = 2
+        Me.TextBoxUrl.TabStop = False
         '
         'TextBoxLocation
         '
+        Me.TextBoxLocation.Enabled = False
         Me.TextBoxLocation.Location = New System.Drawing.Point(106, 95)
         Me.TextBoxLocation.Name = "TextBoxLocation"
         Me.TextBoxLocation.Size = New System.Drawing.Size(290, 23)
         Me.TextBoxLocation.TabIndex = 3
+        Me.TextBoxLocation.TabStop = False
         '
         'ButtonBrowse
         '
@@ -75,7 +80,7 @@ Partial Class Fildedownloader
         Me.ButtonBrowse.Location = New System.Drawing.Point(418, 95)
         Me.ButtonBrowse.Name = "ButtonBrowse"
         Me.ButtonBrowse.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonBrowse.TabIndex = 4
+        Me.ButtonBrowse.TabIndex = 1
         Me.ButtonBrowse.Text = "BROWSE"
         Me.ButtonBrowse.UseVisualStyleBackColor = True
         '
@@ -85,7 +90,7 @@ Partial Class Fildedownloader
         Me.ButtonDownload.Location = New System.Drawing.Point(106, 172)
         Me.ButtonDownload.Name = "ButtonDownload"
         Me.ButtonDownload.Size = New System.Drawing.Size(87, 23)
-        Me.ButtonDownload.TabIndex = 5
+        Me.ButtonDownload.TabIndex = 4
         Me.ButtonDownload.Text = "DOWNLOAD"
         Me.ButtonDownload.UseVisualStyleBackColor = True
         Me.ButtonDownload.Visible = False
@@ -104,7 +109,7 @@ Partial Class Fildedownloader
         Me.ButtonPaste.Location = New System.Drawing.Point(418, 50)
         Me.ButtonPaste.Name = "ButtonPaste"
         Me.ButtonPaste.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonPaste.TabIndex = 7
+        Me.ButtonPaste.TabIndex = 0
         Me.ButtonPaste.Text = "PASTE"
         Me.ButtonPaste.UseVisualStyleBackColor = True
         '
@@ -113,7 +118,7 @@ Partial Class Fildedownloader
         Me.TextBoxFilename.Location = New System.Drawing.Point(106, 134)
         Me.TextBoxFilename.Name = "TextBoxFilename"
         Me.TextBoxFilename.Size = New System.Drawing.Size(290, 23)
-        Me.TextBoxFilename.TabIndex = 8
+        Me.TextBoxFilename.TabIndex = 3
         '
         'labelFilename
         '
@@ -132,10 +137,22 @@ Partial Class Fildedownloader
         Me.LabelPercentage.Size = New System.Drawing.Size(66, 15)
         Me.LabelPercentage.TabIndex = 10
         Me.LabelPercentage.Text = "Percentage"
+        Me.LabelPercentage.Visible = False
         '
         'updater1
         '
         Me.updater1.Enabled = True
+        '
+        'LabelError
+        '
+        Me.LabelError.AutoSize = True
+        Me.LabelError.BackColor = System.Drawing.Color.Snow
+        Me.LabelError.ForeColor = System.Drawing.Color.Red
+        Me.LabelError.Location = New System.Drawing.Point(106, 77)
+        Me.LabelError.Name = "LabelError"
+        Me.LabelError.Size = New System.Drawing.Size(253, 15)
+        Me.LabelError.TabIndex = 11
+        Me.LabelError.Text = "Please the link should end with .pdf or jpeg etc"
         '
         'Fildedownloader
         '
@@ -143,6 +160,7 @@ Partial Class Fildedownloader
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(512, 258)
+        Me.Controls.Add(Me.LabelError)
         Me.Controls.Add(Me.LabelPercentage)
         Me.Controls.Add(Me.labelFilename)
         Me.Controls.Add(Me.TextBoxFilename)
@@ -177,4 +195,5 @@ Partial Class Fildedownloader
     Friend WithEvents labelFilename As Label
     Friend WithEvents LabelPercentage As Label
     Friend WithEvents updater1 As Timer
+    Friend WithEvents LabelError As Label
 End Class
