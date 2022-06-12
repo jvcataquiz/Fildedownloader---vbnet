@@ -22,73 +22,73 @@ Partial Class Fildedownloader
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.LabelUrl = New System.Windows.Forms.Label()
+        Me.LabelFileLocation = New System.Windows.Forms.Label()
+        Me.TextBoxUrl = New System.Windows.Forms.TextBox()
+        Me.TextBoxLocation = New System.Windows.Forms.TextBox()
+        Me.ButtonBrowse = New System.Windows.Forms.Button()
+        Me.ButtonDownload = New System.Windows.Forms.Button()
+        Me.ProgressBarPercentageDownload = New System.Windows.Forms.ProgressBar()
         Me.SuspendLayout()
         '
-        'Label1
+        'LabelUrl
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(72, 59)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(28, 15)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "URL"
+        Me.LabelUrl.AutoSize = True
+        Me.LabelUrl.Location = New System.Drawing.Point(72, 59)
+        Me.LabelUrl.Name = "LabelUrl"
+        Me.LabelUrl.Size = New System.Drawing.Size(28, 15)
+        Me.LabelUrl.TabIndex = 0
+        Me.LabelUrl.Text = "URL"
         '
-        'Label2
+        'LabelFileLocation
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 104)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(88, 15)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "FILE LOCATION"
+        Me.LabelFileLocation.AutoSize = True
+        Me.LabelFileLocation.Location = New System.Drawing.Point(12, 104)
+        Me.LabelFileLocation.Name = "LabelFileLocation"
+        Me.LabelFileLocation.Size = New System.Drawing.Size(88, 15)
+        Me.LabelFileLocation.TabIndex = 1
+        Me.LabelFileLocation.Text = "FILE LOCATION"
         '
-        'TextBox1
+        'TextBoxUrl
         '
-        Me.TextBox1.Location = New System.Drawing.Point(106, 51)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(387, 23)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBoxUrl.Location = New System.Drawing.Point(106, 51)
+        Me.TextBoxUrl.Name = "TextBoxUrl"
+        Me.TextBoxUrl.Size = New System.Drawing.Size(387, 23)
+        Me.TextBoxUrl.TabIndex = 2
         '
-        'TextBox2
+        'TextBoxLocation
         '
-        Me.TextBox2.Location = New System.Drawing.Point(106, 95)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(290, 23)
-        Me.TextBox2.TabIndex = 3
+        Me.TextBoxLocation.Location = New System.Drawing.Point(106, 95)
+        Me.TextBoxLocation.Name = "TextBoxLocation"
+        Me.TextBoxLocation.Size = New System.Drawing.Size(290, 23)
+        Me.TextBoxLocation.TabIndex = 3
         '
-        'Button1
+        'ButtonBrowse
         '
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(418, 95)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "BROWSE"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonBrowse.ForeColor = System.Drawing.Color.Black
+        Me.ButtonBrowse.Location = New System.Drawing.Point(418, 95)
+        Me.ButtonBrowse.Name = "ButtonBrowse"
+        Me.ButtonBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonBrowse.TabIndex = 4
+        Me.ButtonBrowse.Text = "BROWSE"
+        Me.ButtonBrowse.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonDownload
         '
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(106, 145)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(87, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "DOWNLOAD"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonDownload.ForeColor = System.Drawing.Color.Black
+        Me.ButtonDownload.Location = New System.Drawing.Point(106, 145)
+        Me.ButtonDownload.Name = "ButtonDownload"
+        Me.ButtonDownload.Size = New System.Drawing.Size(87, 23)
+        Me.ButtonDownload.TabIndex = 5
+        Me.ButtonDownload.Text = "DOWNLOAD"
+        Me.ButtonDownload.UseVisualStyleBackColor = True
         '
-        'ProgressBar1
+        'ProgressBarPercentageDownload
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(210, 145)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(283, 23)
-        Me.ProgressBar1.TabIndex = 6
+        Me.ProgressBarPercentageDownload.Location = New System.Drawing.Point(210, 145)
+        Me.ProgressBarPercentageDownload.Name = "ProgressBarPercentageDownload"
+        Me.ProgressBarPercentageDownload.Size = New System.Drawing.Size(283, 23)
+        Me.ProgressBarPercentageDownload.TabIndex = 6
         '
         'Fildedownloader
         '
@@ -96,13 +96,13 @@ Partial Class Fildedownloader
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(512, 219)
-        Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ProgressBarPercentageDownload)
+        Me.Controls.Add(Me.ButtonDownload)
+        Me.Controls.Add(Me.ButtonBrowse)
+        Me.Controls.Add(Me.TextBoxLocation)
+        Me.Controls.Add(Me.TextBoxUrl)
+        Me.Controls.Add(Me.LabelFileLocation)
+        Me.Controls.Add(Me.LabelUrl)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MaximizeBox = False
@@ -114,11 +114,11 @@ Partial Class Fildedownloader
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents LabelUrl As Label
+    Friend WithEvents LabelFileLocation As Label
+    Friend WithEvents TextBoxUrl As TextBox
+    Friend WithEvents TextBoxLocation As TextBox
+    Friend WithEvents ButtonBrowse As Button
+    Friend WithEvents ButtonDownload As Button
+    Friend WithEvents ProgressBarPercentageDownload As ProgressBar
 End Class
