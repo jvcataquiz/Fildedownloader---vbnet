@@ -5,3 +5,13 @@ C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debu
 C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\Filedownloader.AssemblyInfoInputs.cache
 C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\Filedownloader.AssemblyInfo.vb
 C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\Filedownloader.vbproj.CoreCompileInputs.cache
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\bin\Debug\net6.0-windows\Filedownloader.exe
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\bin\Debug\net6.0-windows\Filedownloader.deps.json
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\bin\Debug\net6.0-windows\Filedownloader.runtimeconfig.json
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\bin\Debug\net6.0-windows\Filedownloader.dll
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\bin\Debug\net6.0-windows\Filedownloader.pdb
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\Filedownloader.dll
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\refint\Filedownloader.dll
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\Filedownloader.pdb
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\Filedownloader.genruntimeconfig.cache
+C:\Users\Jv Cataquiz\game\File Downloader\Filedownloader\Filedownloader\obj\Debug\net6.0-windows\ref\Filedownloader.dll
