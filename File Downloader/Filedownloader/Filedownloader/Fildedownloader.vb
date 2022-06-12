@@ -25,6 +25,13 @@ Public Class Fildedownloader
         ProgressBarPercentageDownload.Value = e.ProgressPercentage
         LabelPercentage.Text = e.ProgressPercentage.ToString() + " %"
         String.Format("{0} MB's/ {1} MB's", (e.BytesReceived / 1024D / 1024D).ToString("0.00"), (e.TotalBytesToReceive / 1024D / 1024D).ToString("0.00"))
+        If ProgressBarPercentageDownload.Value = 100 Then
+            MessageBox.Show("File Downloaded!!!")
+            ButtonReset.Visible = True
+        Else
+            ButtonReset.Visible = False
+        End If
+
     End Sub
 
     Private Sub Fildedownloader_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -43,12 +50,23 @@ Public Class Fildedownloader
                 LabelPercentage.Visible = True
             End If
         End If
-        If LabelPercentage.Text.Equals("100 %") Then
-            MessageBox.Show("File Downloaded!!!")
-            TextBoxUrl.Text = ""
-            LabelPercentage.Text = "0 %"
-            TextBoxLocation.Text = ""
+
+    End Sub
+
+    Private Sub ButtonReset_Click(sender As Object, e As EventArgs) Handles ButtonReset.Click
+        If ButtonReset.Visible Then
             TextBoxFilename.Text = ""
+            LabelPercentage.Text = ""
+            ProgressBarPercentageDownload.Value = 0
+            TextBoxLocation.Text = ""
+            TextBoxUrl.Text = ""
+            ButtonReset.Visible = False
+            ButtonDownload.Visible = False
+            ProgressBarPercentageDownload.Visible = False
+        Else
+            ButtonReset.Visible = True
         End If
+
+
     End Sub
 End Class

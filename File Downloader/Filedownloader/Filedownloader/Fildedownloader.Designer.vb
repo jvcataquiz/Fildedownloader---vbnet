@@ -36,6 +36,7 @@ Partial Class Fildedownloader
         Me.LabelPercentage = New System.Windows.Forms.Label()
         Me.updater1 = New System.Windows.Forms.Timer(Me.components)
         Me.LabelError = New System.Windows.Forms.Label()
+        Me.ButtonReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LabelUrl
@@ -154,12 +155,24 @@ Partial Class Fildedownloader
         Me.LabelError.TabIndex = 11
         Me.LabelError.Text = "Please the link should end with .pdf or jpeg etc"
         '
+        'ButtonReset
+        '
+        Me.ButtonReset.ForeColor = System.Drawing.Color.Black
+        Me.ButtonReset.Location = New System.Drawing.Point(223, 232)
+        Me.ButtonReset.Name = "ButtonReset"
+        Me.ButtonReset.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonReset.TabIndex = 12
+        Me.ButtonReset.Text = "RESET"
+        Me.ButtonReset.UseVisualStyleBackColor = True
+        Me.ButtonReset.Visible = False
+        '
         'Fildedownloader
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(512, 258)
+        Me.ClientSize = New System.Drawing.Size(512, 269)
+        Me.Controls.Add(Me.ButtonReset)
         Me.Controls.Add(Me.LabelError)
         Me.Controls.Add(Me.LabelPercentage)
         Me.Controls.Add(Me.labelFilename)
@@ -196,4 +209,5 @@ Partial Class Fildedownloader
     Friend WithEvents LabelPercentage As Label
     Friend WithEvents updater1 As Timer
     Friend WithEvents LabelError As Label
+    Friend WithEvents ButtonReset As Button
 End Class
